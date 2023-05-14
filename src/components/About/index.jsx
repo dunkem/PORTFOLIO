@@ -18,9 +18,8 @@ const CounterItem = ({ title, counter, measurement }) => {
 
 const About = () => {
   useCountUp({ ref: "experienceCounter", end: 80, duration: 1 });
-  useCountUp({ ref: "githubStarsCounter", end: 80, duration: 1 });
-  useCountUp({ ref: "feedbackCounter", end: 80, duration: 1 });
-  useCountUp({ ref: "projectsCounter", end: 80, duration: 1 });
+  useCountUp({ ref: "feedbackCounter", end: 100, duration: 1 });
+  useCountUp({ ref: "projectsCounter", end: 100, duration: 1 });
 
   return (
     <Element id="about" className="bg-secondaryBackground pl-3 pr-3 pt-10 pb-12 lg:pt[40px] lg:pb[40px] ">

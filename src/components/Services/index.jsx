@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <Element id="services" className="bg-primaryBackground pt-10 pb-12  lg:pt[40px] lg:pb[40px]">
       <div className="container mx-auto">
-        <Header title={"Our Services"} />
+        <Header title={"Skills"} />
         <div className="flex flex-wrap">
           {servicesData.map((item, index) => (
             <div key={index} className="w-full px-4 md:w-1/2 lg:w-1/3">

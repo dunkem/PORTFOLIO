@@ -17,7 +17,7 @@ import image4 from "../images/proyecto4.png";
 export const navigation = [
   { name: "Home", href: "#", id: "home" },
   { name: "About", href: "#", id: "about" },
-  { name: "Skills", href: "#", id: "skills" },
+  { name: "Skills", href: "#", id: "services" },
   { name: "Portfolio", href: "#", id: "portfolio" },
   
 ];
@@ -35,15 +35,11 @@ export const aboutMeData = [
 
 export const counterData = [
   {
-    id: "experienceCounter",
+    id: "experience",
     title: "Years of experience",
     measurement: "",
   },
-  {
-    id: "githubStarsCounter",
-    title: "Stars on GitHub",
-    measurement: "k+",
-  },
+  
   {
     id: "feedbackCounter",
     title: "Positive feedback",
@@ -58,33 +54,33 @@ export const counterData = [
 
 export const servicesData = [
   {
-    title: "Business Stratagy",
+    title: "HTML5",
     subtitle:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
-    title: "Marketing & Reporting",
+    title: "CSS3",
     subtitle:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
-    title: "Website Development",
+    title: "JAVASCRIPT",
     subtitle:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
     // icon: <MdOutlineDeveloperMode color={getCurrentColor} size={60} />,
-    title: "Website Development",
+    title: "NODE.JS",
     subtitle:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
-    title: "Website Development",
+    title: "REACT.JS",
     subtitle:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
-    title: "Marketing & Reporting",
+    title: "GIT HUB",
     subtitle:
       "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
@@ -104,22 +100,22 @@ export const getIcons = (getCurrentColor) => {
 export const projects = [
   {
     image: image1,
-    title: "DEVELOPMENT",
+    title: "DIETETICA HOLISTIC",
     subtitle: "Getting tickets to the big show",
   },
   {
     image: image2,
-    title: "DESIGN",
+    title: "DIETETICA HOLISTIC V2",
     subtitle: "Getting tickets to the big show",
   },
   {
     image: image3,
-    title: "MARKETING",
+    title: "ORIGINAL NIKE",
     subtitle: "Getting tickets to the big show",
   },
   {
     image: image4,
-    title: "ANALYTICS",
+    title: "META CLONE",
     subtitle: "Getting tickets to the big show",
   },
 ];
