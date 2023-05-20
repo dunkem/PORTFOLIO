@@ -19,7 +19,7 @@ export default function Home() {
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-textColor sm:text-6xl">
-                Hi, I am Douglas. Front End Developer.
+                Hi, I am Douglas. Full Stack Developer.
               </h1>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <button

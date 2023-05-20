@@ -6,11 +6,12 @@ import {
 import { CgWebsite } from "react-icons/cg";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { GoReport } from "react-icons/go";
-import { FaCss3, FaFacebook, FaGithub, FaHtml5, FaInstagram, FaJava, FaJs, FaLinkedin, FaNodeJs, FaReact, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import image1 from "../images/proyecto1.png";
+import { FaBootstrap, FaCss3, FaDatabase, FaFacebook, FaGithub, FaHtml5, FaInstagram, FaJava, FaJs, FaLinkedin, FaNodeJs, FaReact, FaSass, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import image1 from "../images/proyecto1.png"; 
 import image2 from "../images/proyectojs.png";
 import image3 from "../images/proyecto3.png";
 import image4 from "../images/proyecto4.png";
+
 
 
 
@@ -34,66 +35,80 @@ export const aboutMeData = [
 ];
 
 export const counterData = [
+ 
   {
-    id: "experience",
-    title: "Years of experience",
+    id: "feedbackCounter",
+    title: "",
     measurement: "",
   },
   
   {
-    id: "feedbackCounter",
-    title: "Positive feedback",
-    measurement: "%",
-  },
-  {
     id: "projectsCounter",
-    title: "Projects Completed",
-    measurement: "%",
+    title: "",
+    link: "%",
   },
 ];
 
 export const servicesData = [
   {
-    title: "HTML5",
+    title: "HTML5", 
     subtitle:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+      "",
   },
   {
     title: "CSS3",
     subtitle:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+      "",
+  },
+  {
+    title: "BOOSTRAP",
+    subtitle:
+      "",
+  },
+  {
+    title: "SASS",
+    subtitle:
+      "",
   },
   {
     title: "JAVASCRIPT",
     subtitle:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+      "",
   },
   {
     // icon: <MdOutlineDeveloperMode color={getCurrentColor} size={60} />,
     title: "NODE.JS",
     subtitle:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+      "",
   },
   {
     title: "REACT.JS",
     subtitle:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+      "",
   },
   {
     title: "GIT HUB",
     subtitle:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
+      "",
+  },
+  {
+    title: "MONGODB",
+    subtitle:
+      "",
   },
 ];
 
 export const getIcons = (getCurrentColor) => {
   return [
-    <FaHtml5 size={60} color={getCurrentColor} />,
+    <FaHtml5 size={60} color={getCurrentColor} />, 
     <FaCss3 size={60} color={getCurrentColor} />,
+    <FaBootstrap size={60} color={getCurrentColor} />,
+    <FaSass size={60} color={getCurrentColor} />,
     <FaJs color={getCurrentColor} size={60} />,
     <FaNodeJs color={getCurrentColor} size={60} />,
     <FaReact color={getCurrentColor} size={60} />,
     <FaGithub size={60} color={getCurrentColor} />,
+    <FaDatabase size={60} color={getCurrentColor} />,
   ];
 };
 
@@ -101,22 +116,28 @@ export const projects = [
   {
     image: image1,
     title: "DIETETICA HOLISTIC",
-    subtitle: "Getting tickets to the big show",
+    subtitle: "Page created with html5, css3, Bootstrap, processed with SASS, FlexBox and GRIDS application, Servers and SEO, GitHub.",
+    link: "https://dieteticaholistic.netlify.app/",
+    link2: "https://dieteticaholisticjs.netlify.app/"
   },
   {
-    image: image2,
+    image: image2, 
     title: "DIETETICA HOLISTIC V2",
-    subtitle: "Getting tickets to the big show",
+    subtitle: "Page created with Html5, Css3, JavaScript, Ajax and Fetch, Jquery, Boostrap, processed with SASS, Node.js and GitHub.",
+    link: "https://dieteticaholisticjs.netlify.app/"
   },
   {
-    image: image3,
+    image: image3, 
     title: "ORIGINAL NIKE",
-    subtitle: "Getting tickets to the big show",
+    subtitle: "Page created with ReactJs.",
+    link: "https://originalnikereactjs.netlify.app/"
+
   },
   {
-    image: image4,
+    image: image4, 
     title: "META CLONE",
-    subtitle: "Getting tickets to the big show",
+    subtitle: "Page created with ReactJs in which the application allows to connect with a Firestore database, I also use Tailwindcss.",
+    link: "https://clonemeta.netlify.app/"
   },
 ];
 
@@ -154,9 +175,35 @@ export const contactControls = [
   },
 ];
 
-export const footerIcons = [
-  <FaLinkedin size={"25px"} />,
-  <FaGithub size={"25px"} />,
-  <FaWhatsapp size={"25px"} />,
-  <FaInstagram size={"25px"} />,
+const footerLinks = [
+  "https://www.linkedin.com/in/douglasdunke/",
+  "https://github.com/dunkem?tab=repositories",
+  "https://web.whatsapp.com/send?phone=541159097342",
+  "https://www.instagram.com/douglas.dunke/"
 ];
+
+export const footerIcons = [
+  <a href={footerLinks[0]} target="_blank" rel="noopener noreferrer">
+    <FaLinkedin size={"25px"} />
+  </a>,
+  <a href={footerLinks[1]} target="_blank" rel="noopener noreferrer">
+    <FaGithub size={"25px"} />
+  </a>,
+  <a href={footerLinks[2]} target="_blank" rel="noopener noreferrer">
+    <FaWhatsapp size={"25px"} />
+  </a>,
+  <a href={footerLinks[3]} target="_blank" rel="noopener noreferrer">
+    <FaInstagram size={"25px"} />
+  </a>
+];
+
+const links = [
+  'https://www.github.com',
+  'https://www.twitter.com',
+  'https://www.linkedin.com',
+  'https://www.instagram.com'
+];
+
+
+
+

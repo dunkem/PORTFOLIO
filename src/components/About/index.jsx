@@ -1,9 +1,14 @@
 import Header from "../Header";
 import image1 from "../../images/perfil1.jpg";
 import { aboutMeData } from "../../data";
-import { useCountUp } from "react-countup";
+
 import { counterData } from "../../data";
 import { Element } from "react-scroll";
+
+const generarCV = () => {
+  const rutaCV = 'https://drive.google.com/file/d/1evyQcg-feFDhKLxUqeS_-G5zuiU7KJu3/view?usp=sharing';
+  window.open(rutaCV, '_blank');
+};
 
 const CounterItem = ({ title, counter, measurement }) => {
   return (
@@ -17,9 +22,8 @@ const CounterItem = ({ title, counter, measurement }) => {
 };
 
 const About = () => {
-  useCountUp({ ref: "experienceCounter", end: 80, duration: 1 });
-  useCountUp({ ref: "feedbackCounter", end: 100, duration: 1 });
-  useCountUp({ ref: "projectsCounter", end: 100, duration: 1 });
+  
+
 
   return (
     <Element id="about" className="bg-secondaryBackground pl-3 pr-3 pt-10 pb-12 lg:pt[40px] lg:pb[40px] ">
@@ -32,7 +36,16 @@ const About = () => {
               className="rounded-lg "
               alt="About Me Image"
             />
+            
           </div>
+          <div>
+      <button onClick={generarCV}
+    className="uppercase text-xl py-4 pr-5 pl-5 font-bold tracking-wide bg-bgRed text-gray-100  rounded-lg  focus:outline-none focus:shadow-outline"
+    >Download CV</button>
+      
+    </div>
+          
+
           <div className="sm:overflow-auto mt-10 sm:mt-0 md:mt-0 w-full lg:w-3/4 sm:w-2/4 md:w-2/4 text-left">
             {aboutMeData.map((bioDataItem) => (
               <p
@@ -41,9 +54,10 @@ const About = () => {
               >
                 {bioDataItem.bio}
               </p>
+              
             ))}
             <div className="mt-10 sm:mt-20 shadow-sm">
-              <div className="container mx-auto py-3 block sm:flex sm:justify-between items-center">
+              <div className="container mx-auto py-2 block sm:flex sm:justify-between items-center">
                 {counterData.map((item) => (
                   <CounterItem
                     title={item.title}

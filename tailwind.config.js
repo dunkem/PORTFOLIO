@@ -9,8 +9,8 @@ module.exports = {
         height750: "750px",
       },
       colors: {
-        primaryBackground: "#101010",
-        secondaryBackground: "#191919",
+        primaryBackground: "#102010",
+        secondaryBackground: "#192919",
         icons: "#f9004d",
         textColor: "#fff",
         textSecondary: "rgba(198,201,216,.75)",

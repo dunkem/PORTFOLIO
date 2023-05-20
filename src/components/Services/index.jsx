@@ -12,7 +12,7 @@ const Services = () => {
         <Header title={"Skills"} />
         <div className="flex flex-wrap">
           {servicesData.map((item, index) => (
-            <div key={index} className="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div key={index} className="w-full px-8 md:w-1/2 lg:w-1/3">
               <div
                 onMouseEnter={() => setCurrentItem(index)}
                 onMouseLeave={() => setCurrentItem(null)}
@@ -25,7 +25,7 @@ const Services = () => {
                             mb-8 rounded-[20px] p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10 transform hover:translate-y-2 transitio duration-300n: ;
                             `}
               >
-                <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
+                <div className="mb-8 flex h-[20px] w-[80px] items-center justify-center rounded-2xl">
                     {getIcons(currentItem === index ? "#fff" : "#f9004d")[index]}
                 </div>
                 <h4 className="text-textColor mb-3 text-xl font-semibold">{item.title}</h4>
