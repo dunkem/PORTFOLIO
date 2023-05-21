@@ -3,11 +3,6 @@ import Header from "../Header";
 import { AiFillGithub } from "react-icons/ai";
 import { Element } from "react-scroll";
 
-
-const links = [
-  'https://github.com/dunkem',
-  
-];
 const Portfolio = () => {
   return (
     <Element id="portfolio" className="bg-secondaryBackground pt-10 pb-12  lg:pt[40px] lg:pb[40px]">
@@ -38,12 +33,12 @@ const Portfolio = () => {
                   
                   <div className="flex items-center mt-3">
                   
-                  <a>
+                  <a href={projectItem.githubLink} target="_blank">
                     <button
                   
                       type="button" 
                       className="rounded-full bg-red-900 text-textColor hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-200"
-                      onClick={() => window.open(links[0], '_blank')}
+                      
                     >
                       
                       <AiFillGithub

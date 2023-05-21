@@ -6,7 +6,7 @@ import {
 import { CgWebsite } from "react-icons/cg";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { GoReport } from "react-icons/go";
-import { FaBootstrap, FaCss3, FaDatabase, FaFacebook, FaGithub, FaHtml5, FaInstagram, FaJava, FaJs, FaLinkedin, FaNodeJs, FaReact, FaSass, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaBootstrap, FaCss3, FaDatabase, FaFacebook, FaGithub, FaHtml5, FaInstagram, FaJava, FaJs, FaLinkedin, FaMicrochip, FaNodeJs, FaPython, FaReact, FaSass, FaSquareFull, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import image1 from "../images/proyecto1.png"; 
 import image2 from "../images/proyectojs.png";
 import image3 from "../images/proyecto3.png";
@@ -96,6 +96,21 @@ export const servicesData = [
     subtitle:
       "",
   },
+  {
+    title: "SOPORTE TECNICO Y MANTENIMIENTO DE PC",
+    subtitle:
+      "",
+  },
+  {
+    title: "PHYTOM",
+    subtitle: "EN PROCESO...",
+  },
+  {
+    title: "SQL",
+    subtitle: "EN PROCESO...",
+  },
+  
+
 ];
 
 export const getIcons = (getCurrentColor) => {
@@ -109,6 +124,9 @@ export const getIcons = (getCurrentColor) => {
     <FaReact color={getCurrentColor} size={60} />,
     <FaGithub size={60} color={getCurrentColor} />,
     <FaDatabase size={60} color={getCurrentColor} />,
+    <FaMicrochip size={60} color={getCurrentColor} />,
+    <FaPython size={60} color={getCurrentColor} />,
+    <FaDatabase size={60} color={getCurrentColor} />,
   ];
 };
 
@@ -118,26 +136,28 @@ export const projects = [
     title: "DIETETICA HOLISTIC",
     subtitle: "Page created with html5, css3, Bootstrap, processed with SASS, FlexBox and GRIDS application, Servers and SEO, GitHub.",
     link: "https://dieteticaholistic.netlify.app/",
-    link2: "https://dieteticaholisticjs.netlify.app/"
+    githubLink: "https://github.com/dunkem/PROYECTO-FINAL-DESARROLO-WEB-CODERHOUSE",
   },
   {
     image: image2, 
     title: "DIETETICA HOLISTIC V2",
     subtitle: "Page created with Html5, Css3, JavaScript, Ajax and Fetch, Jquery, Boostrap, processed with SASS, Node.js and GitHub.",
-    link: "https://dieteticaholisticjs.netlify.app/"
+    link: "https://dieteticaholisticjs.netlify.app/",
+    githubLink: "https://github.com/dunkem/PROYECTO-FINAL-JS-CODERHOUSE",
   },
   {
     image: image3, 
     title: "ORIGINAL NIKE",
     subtitle: "Page created with ReactJs.",
-    link: "https://originalnikereactjs.netlify.app/"
-
+    link: "https://originalnikereactjs.netlify.app/",
+    githubLink: "https://github.com/dunkem/PROYECTO-REACTJS-CODERHOUSE",
   },
   {
     image: image4, 
     title: "META CLONE",
     subtitle: "Page created with ReactJs in which the application allows to connect with a Firestore database, I also use Tailwindcss.",
-    link: "https://clonemeta.netlify.app/"
+    link: "https://clonemeta.netlify.app/",
+    githubLink: "https://github.com/dunkem/PROYECTOREACTJS2",
   },
 ];
 
@@ -146,7 +166,7 @@ export const contactControls = [
   {
     id: "name",
     placeholder: "Your Name",
-    name: "from_name",
+    name: "user_name",
     type: "text",
     inputType: "input",
     className:
@@ -158,7 +178,7 @@ export const contactControls = [
     placeholder: "Your Email Address",
     type: "text",
     inputType: "input",
-    name: "from_email",
+    name: "user_email",
     className:
       "w-full bg-black text-textColor mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline",
     divClassName: "mt-8",
