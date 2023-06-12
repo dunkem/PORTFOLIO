@@ -23,8 +23,8 @@ export default {
           quantity: 4,
         },
         repulse: {
-          distance: 150,
-          duration: 0.4,
+          distance: 100,
+          duration: 0.9,
         },
       },
     },
@@ -49,13 +49,13 @@ export default {
           default: "bounce",
         },
         random: false,
-        speed: 6,
+        speed: 2,
         straight: false,
       },
       number: {
         density: {
           enable: true,
-          area: 800,
+          area: 500,
         },
         value: 80,
       },
@@ -66,7 +66,7 @@ export default {
         type: "circle",
       },
       size: {
-        value: { min: 1, max: 5 },
+        value: { min: 0.5, max: 2 },
       },
     },
     detectRetina: true,

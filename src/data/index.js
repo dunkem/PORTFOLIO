@@ -6,7 +6,7 @@ import {
 import { CgWebsite } from "react-icons/cg";
 import { MdOutlineDeveloperMode } from "react-icons/md";
 import { GoReport } from "react-icons/go";
-import { FaBootstrap, FaCss3, FaDatabase, FaFacebook, FaGithub, FaHtml5, FaInstagram, FaJava, FaJs, FaLinkedin, FaMicrochip, FaNodeJs, FaPython, FaReact, FaSass, FaSquareFull, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaBootstrap, FaCss3, FaDatabase, FaFacebook, FaFileExcel, FaGithub, FaHtml5, FaInstagram, FaJava, FaJs, FaLanguage, FaLinkedin, FaMicrochip, FaMicrosoft, FaNodeJs, FaPython, FaReact, FaSass, FaSquareFull, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import image1 from "../images/proyecto1.png"; 
 import image2 from "../images/proyectojs.png";
 import image3 from "../images/proyecto3.png";
@@ -26,11 +26,11 @@ export const navigation = [
 export const aboutMeData = [
   {
     id: 1,
-    bio: "Hello! I am a passionate Front-End developer with an unquenchable thirst for knowledge and a love for the world of technology. My main focus is creating engaging and functional web experiences for users. With a strong foundation in HTML, CSS and JavaScript, I can bring designs to life using frameworks like React.js and tools like Bootstrap and Sass to ensure a professional look and clean coding. My thirst for knowledge has led me to broaden my experience in web development and embark on learning Full Stack skills. Currently, I am immersed in the study of Node.js, which allows me to build more complete and scalable web applications. I firmly believe in the importance of staying up to date with the latest technologies and trends in web development, and I am excited about the opportunities that await me to expand my skills.",
+    bio: "Hello!, I am a passionate Full Stack developer with a strong commitment to growth in the field of web development. I am excited to face exciting challenges and expand my skills in innovative projects. With solid knowledge in frontend and backend technologies, I focus on offering efficient and user-centric solutions. Through personal projects and collaborations, I have developed skills in design, implementation, and problem solving.",
   },
   {
     id: 2,
-    bio: "A passionate and self-taught person who is always looking for challenges and growth opportunities. I love collaborating in teams and learning from other talented developers, as I strongly believe in the importance of sharing knowledge and experiences to achieve exceptional results. I am always open to new ideas and approaches, and I am willing to push myself to overcome obstacles and achieve success. My ultimate goal is to grow as a developer and contribute to innovative projects that have a positive impact on people's lives. I am excited for the future of technology and ready to face new challenges and continually learn to improve my skills. I am always willing to dive into exciting new projects and embrace opportunities that allow me to continue advancing in my career.",
+    bio: "I am always open to learn new technologies and keep up to date with the latest trends. My approach is based on understanding the needs of clients to provide personalized and quality solutions. I am excited about the opportunities in the field of web development and committed to growing professionally. My determination and work ethic drive me to overcome obstacles and learn from each experience. If you are looking for a passionate and dedicated Full Stack developer, I am ready to face challenges and grow in your team. I am looking forward to gaining experience on larger projects while continuing to develop my skills in web development.",
   },
 ];
 
@@ -97,17 +97,25 @@ export const servicesData = [
       "",
   },
   {
-    title: "SOPORTE TECNICO Y MANTENIMIENTO DE PC",
+    title: "TECHNICAL SUPPORT AND PC MAINTENANCE",
     subtitle:
       "",
   },
   {
     title: "PHYTOM",
-    subtitle: "EN PROCESO...",
+    subtitle: "IN PROGRESS...",
   },
   {
     title: "SQL",
-    subtitle: "EN PROCESO...",
+    subtitle: "IN PROGRESS...",
+  },
+  {
+    title: "PACK OFFICE",
+    subtitle: "",
+  },
+  {
+    title: "LANGUAGES",
+    subtitle: "Advanced portuguese | Intermediate English",
   },
   
 
@@ -127,6 +135,8 @@ export const getIcons = (getCurrentColor) => {
     <FaMicrochip size={60} color={getCurrentColor} />,
     <FaPython size={60} color={getCurrentColor} />,
     <FaDatabase size={60} color={getCurrentColor} />,
+    <FaFileExcel size={60} color={getCurrentColor} />,
+    <FaLanguage size={60} color={getCurrentColor} />,
   ];
 };
 

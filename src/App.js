@@ -14,8 +14,8 @@ function App() {
       <div className="mt-20">
           <Home/>
           <About/>
-          <Services/>
           <Portfolio/>
+          <Services/>
           <Contact/>
           <Footer/>
       </div>

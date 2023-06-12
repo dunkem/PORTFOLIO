@@ -1,16 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { getIcons, servicesData } from "../../data";
 import Header from "../Header";
 import { Element } from "react-scroll";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 const Services = () => {
   const [currentItem, setCurrentItem] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+  
+    window.addEventListener("resize", handleResize);
+  
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: windowWidth >= 1024 ? 6 : windowWidth >= 768 ? 3 : 1,
+    slidesToScroll: 1
+  };
 
   return (
     <Element id="services" className="bg-primaryBackground pt-10 pb-12  lg:pt[40px] lg:pb[40px]">
       <div className="container mx-auto">
         <Header title={"Skills"} />
-        <div className="flex flex-wrap">
+        <Slider {...settings}>
           {servicesData.map((item, index) => (
             <div key={index} className="w-full px-8 md:w-1/2 lg:w-1/3">
               <div
@@ -26,14 +51,14 @@ const Services = () => {
                             `}
               >
                 <div className="mb-8 flex h-[20px] w-[80px] items-center justify-center rounded-2xl">
-                    {getIcons(currentItem === index ? "#fff" : "#f9004d")[index]}
+                  {getIcons(currentItem === index ? "#fff" : "#f9004d")[index]}
                 </div>
                 <h4 className="text-textColor mb-3 text-xl font-semibold">{item.title}</h4>
                 <p className={currentItem === index ? "text-textColor" : "text-textSecondary"}>{item.subtitle}</p>
               </div>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
     </Element>
   );

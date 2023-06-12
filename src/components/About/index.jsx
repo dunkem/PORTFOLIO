@@ -40,7 +40,7 @@ const About = () => {
           </div>
           <div>
       <button onClick={generarCV}
-    className="uppercase text-xl py-4 pr-5 pl-5 font-bold tracking-wide bg-bgRed text-gray-100  rounded-lg  focus:outline-none focus:shadow-outline"
+    className="uppercase text-xl py-3 pr-3 pl-2 font-bold tracking-wide bg-bgRed text-gray-100  rounded-lg  focus:outline-none focus:shadow-outline"
     >Download CV</button>
       
     </div>

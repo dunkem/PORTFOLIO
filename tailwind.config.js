@@ -9,14 +9,14 @@ module.exports = {
         height750: "750px",
       },
       colors: {
-        primaryBackground: "#102010",
-        secondaryBackground: "#192919",
+        primaryBackground: "#0369a1",
+        secondaryBackground: "#4a044e",
         icons: "#f9004d",
         textColor: "#fff",
         textSecondary: "rgba(198,201,216,.75)",
         hoverBg: "#f9004d",
         blackBg: "#000000",
-        bgRed: "#f9004d",
+        bgRed: "#84cc16",
       }
     },
   },

@@ -27,7 +27,7 @@ const Footer = () => {
 
         </ul>
         <p className="mt-8 leading-6 text-center text-textSecondary">
-            2023 Douglas Dunke, Inc. All rights reserved
+            2023 Douglas Dunke. All rights reserved
         </p>
       </div>
     </div>
