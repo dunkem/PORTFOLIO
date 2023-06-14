@@ -6,7 +6,7 @@ import { counterData } from "../../data";
 import { Element } from "react-scroll";
 
 const generarCV = () => {
-  const rutaCV = 'https://drive.google.com/file/d/1evyQcg-feFDhKLxUqeS_-G5zuiU7KJu3/view?usp=sharing';
+  const rutaCV = 'https://drive.google.com/file/d/1B_OeLCbXSKGEWQxCitzhiY53Wny0Wg0M/view?usp=sharing';
   window.open(rutaCV, '_blank');
 };
 
